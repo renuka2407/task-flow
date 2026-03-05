@@ -76,14 +76,14 @@ Follow these steps to run the project locally:
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/task-flow.git
+git clone https://github.com/renuka2407/task-flow.git
 ```
 
 2. Open the project in VS Code.
 
 3. Make sure you have an internet connection because Firebase runs online.
 
-4. Open `homepage.html` or `login.html` in a browser.
+4. Open `index.html` or `login.html` in a browser.
 
 5. Create a new account using Signup.
 

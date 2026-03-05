@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Dashboard | Task Flow</title>
+  <link rel="stylesheet" href="css/intern.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Task Flow
+        <a href="homepage.html" class="home-icon">
+            <span>&#8962;</span> <!--Home symbol-->
+        </a>
+      </h1>
+      <div class="nav-right">
+        <span class="intern-name">Welcome, Intern</span>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#" class="active">Overview</a></li>
+      <li><a href="#myTasks">My Tasks</a></li>
+      <li><a href="internprogress.html">Progress</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="cards">
+      <div class="card total">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+      </div>
+      <div class="card completed">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+      </div>
+      <div class="card pending">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+      </div>
+    </section>
+
+    <!-- My Tasks -->
+    <section id="myTasks" class="task-list-section">
+      <h2>My Assigned Tasks</h2>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Task Title</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Task Flow. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/intern-task.js"></script>
+
+</body>
+</html>

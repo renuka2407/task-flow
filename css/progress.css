@@ -1,0 +1,140 @@
+/* === General Layout === */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* === Navbar === */
+header {
+  background-color: #244262;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.home-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+.home-icon:hover {
+  color: #ffde59;
+}
+
+/* === Progress Section === */
+.progress-section {
+  margin: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.progress-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.progress-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.progress-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fc;
+  border-radius: 10px;
+  width: 22%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.progress-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.progress-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.progress-card p {
+  font-size: 1.8rem;
+  color: #244262;
+  font-weight: bold;
+}
+
+.chart-area {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.tip {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #444;
+  font-style: italic;
+  background: #f1f5ff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #244262;
+  color: white;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .progress-card {
+    width: 45%;
+  }
+
+  .chart-area {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-card {
+    width: 100%;
+  }
+}

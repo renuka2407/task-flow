@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password - Task Flow</title>
+  <link rel="stylesheet" href="css/reset.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      Task Flow <a href="homepage.html" class="home-icon"><span>&#8962;</span></a>
+    </div>
+  </nav>
+
+  <div class="forgot-container">
+    <h2>Reset Password</h2>
+    <p>Enter your new password below.</p>
+
+    <form id="resetForm">
+      <label for="newPassword">New Password</label>
+      <input type="password" id="newPassword" placeholder="Enter new password" required />
+
+      <label for="confirmNewPassword">Confirm New Password</label>
+      <input type="password" id="confirmNewPassword" placeholder="Confirm new password" required />
+
+      <button type="submit">Reset Password</button>
+    </form>
+
+    <p class="back-to-login">
+      Back to <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 Task Flow. All rights reserved.</p>
+  </footer>
+
+  <script src="js/reset.js"></script>
+</body>
+</html>

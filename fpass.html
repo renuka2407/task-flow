@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forgot Password | Task Flow</title>
+  <link rel="stylesheet" href="css/fpass.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      Task Flow
+      <a href="homepage.html" class="home-icon" title="Go to Home">
+        <span>&#8962;</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Forgot Password Section -->
+  <div class="forgot-container">
+    <div class="forgot-box">
+      <h2>Forgot Your Password?</h2>
+      <p class="subtitle">Enter your registered email below and we’ll send you instructions to reset your password.</p>
+
+      <form id="forgotForm">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <button type="submit" class="reset-btn">Send Reset Link</button>
+
+        <div class="extra-links">
+          <p>Remembered your password? <a href="login.html">Back to Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Task Flow | Designed by Renuka Raut
+  </footer>
+
+  <script type="module" src="js/fpass.js"></script>
+</body>
+</html>

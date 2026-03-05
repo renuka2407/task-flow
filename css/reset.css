@@ -1,0 +1,131 @@
+/* General Page Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c3f0ca, #a2d2ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+.logo .home-icon {
+  margin-left: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.logo .home-icon:hover {
+  color: #1d3557;
+}
+
+/* Reset Password Container */
+.forgot-container {
+  max-width: 400px;
+  background: #fff;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forgot-container h2 {
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.forgot-container p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #1d3557;
+  outline: none;
+  box-shadow: 0 0 4px #1d3557;
+}
+
+button {
+  background: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d3557;
+}
+
+/* Back to Login */
+.back-to-login {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.back-to-login a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-to-login a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Dashboard - Progress</title>
+  <link rel="stylesheet" href="css/progress.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Task Flow
+      <a href="homepage.html" class="home-icon">
+        <span>&#8962;</span> 
+      </a>
+    </div>
+  </header>
+
+<!--
+<a href="homepage.html" class="home-icon">
+            <span>&#8962;</span> // Home symbol//
+        </a>  
+-->
+
+  <!-- Progress Section -->
+  <section class="progress-section">
+    <h2>Progress Overview</h2>
+    <div class="progress-cards">
+      <div class="progress-card">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">12</p>
+      </div>
+      <div class="progress-card">
+        <h3>Completed</h3>
+        <p id="completedTasks">8</p>
+      </div>
+      <div class="progress-card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">3</p>
+      </div>
+      <div class="progress-card">
+        <h3>Ongoing</h3>
+        <p id="ongoingTasks">1</p>
+      </div>
+    </div>
+
+    <div class="chart-area">
+      <canvas id="progressChart"></canvas>
+    </div>
+
+    <div class="tip">
+      <p>✨ Great job! You’ve completed 66% of your total tasks this week.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Task Flow | Internship Task Tracker</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="js/progress.js"></script>
+</body>
+</html>

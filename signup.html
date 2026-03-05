@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Flow | Sign Up</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <style>
+    /* --- Simple black home icon style --- */
+    .home-icon {
+      font-size: 1.4rem;
+      color: #000;
+      text-decoration: none;
+      margin-left: 8px;
+      transition: transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .home-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo">Task Flow</div>
+      <a href="homepage.html" class="home-icon" title="Go to Home">
+        <!-- Black home SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 0 24 24" fill="Blue">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-buttons">
+      <a href="login.html" class="btn-login">Login</a>
+      <a href="signup.html" class="btn-signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- 🔹 Signup Form Section -->
+  <section class="signup-section">
+    <div class="signup-container">
+      <h1>Create Your Account</h1>
+      <p class="subtitle">Join Task Flow and start managing your internship tasks effectively.</p>
+
+      <form id="signupForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="department">Department / Internship Domain</label>
+            <input type="text" id="department" placeholder="e.g. Web Development, Marketing" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="role">Select Role</label>
+            <select id="role" required>
+              <option value="">-- Select Role --</option>
+              <option value="intern">Intern</option>
+              <option value="supervisor">Supervisor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+          </div>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <p class="login-text">Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>© 2025 Task Flow | Designed by Renuka Raut</p>
+  </footer>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/Fsign.js"></script>
+</body>
+</html>

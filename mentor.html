@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentor Dashboard | Task Flow</title>
+  <link rel="stylesheet" href="css/mentor.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <h1 class="logo">
+      Task Flow
+      <a href="homepage.html" class="home-icon">
+        <span>&#8962;</span> <!-- Home symbol -->
+      </a>
+    </h1>
+    <div class="nav-right">
+      <span class="mentor-name">Welcome, Mentor</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </div>
+</nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#" class="active">Overview</a></li>
+      <li><a href="#addTask">Add Task</a></li>
+      <li><a href="#taskList">View Tasks</a></li>
+      <li><a href="#">View Interns</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="cards">
+      <div class="card total">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+      </div>
+      <div class="card completed">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+      </div>
+      <div class="card pending">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+      </div>
+    </section>
+
+    <!-- Add Task Form -->
+    <section id="addTask" class="task-section">
+      <h2>Assign New Task</h2>
+      <form id="taskForm" class="task-form">
+        <input type="email" id="internEmail" placeholder="Intern Email" required />
+        <input type="text" id="taskTitle" placeholder="Task Title" required />
+        <textarea id="taskDesc" placeholder="Task Description" required></textarea>
+        <input type="date" id="deadline" required />
+        <select id="priority" required>
+          <option value="">Select Priority</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Assign Task</button>
+      </form>
+    </section>
+
+    <!-- Task List -->
+    <section id="taskList" class="task-list-section">
+      <h2>All Assigned Tasks</h2>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Intern Email</th>
+            <th>Task Title</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Action</th> <!--for trash bin-->
+
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Task Flow. All rights reserved.</p>
+  </footer>
+
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/mentor-task.js"></script>
+
+</body>
+</html>
